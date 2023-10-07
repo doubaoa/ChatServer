@@ -18,6 +18,7 @@
 执行 ./autobuild.sh 生成可执行文件ChatServer ChatClient
 ## nginx配置
 在nginx.conf中添加四层负载均衡模块
+```c
 stream {
     upstream MyServer {
         server 127.0.0.1:6000 weight=1 max_fails=3 fail_timeout=30s;
@@ -30,3 +31,9 @@ stream {
         tcp_nodelay on;
     }
 }
+```
+## 待完成
+* 数据安全性设计与实现
+* 分布式设计
+* 用户状态缓存
+* 消息可靠传输
