@@ -15,7 +15,7 @@
 * cmake
 
 ## 编译
-执行 ./autobuild.sh 生成可执行文件ChatServer ChatClient
+执行 ./autobuild.sh 在./bin目录下生成可执行文件ChatServer ChatClient
 ## nginx配置
 在nginx.conf中添加四层负载均衡模块
 ```c
